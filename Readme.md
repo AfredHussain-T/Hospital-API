@@ -48,3 +48,9 @@ Hospital-API
 * Install the mongodb in the system if not already available.
 * Now Run the command npm start.
 * Open the browser and navigate to http://localhost:8000/ to start the application.
+
+# Link:
+
+* http://hospitalapi-wuy9.onrender.com/
+* Use the link in postman to check the responses for the APIs.
+* Go through the routes folder and take the required API from there, append the route to the above link, add the headers, if required select Bearer token under Authorization when logged in as a doctor, provide the required data in JSON format, and you will see the response.

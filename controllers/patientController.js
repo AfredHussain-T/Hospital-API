@@ -46,13 +46,15 @@ module.exports.createReport = async function(req,res){
                 patient: req.params.patientId,
                 status: req.body.status,
              });
+             console.log(req.body.user.id);
              await Patients.findByIdAndUpdate(req.params.patientId, {$push : {report: newReport.id}})
     
              return res.json(200 , {
                 message: 'Report generated successfully',
                 data: {
                     newReport,
-                    currPatient
+                    currPatient,
+                    status: req.body.user.id
                 }
              });
         }

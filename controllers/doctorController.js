@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 
 // Function to register a doctor
 module.exports.registerDoctor = async function (req, res) {
-
+    console.log(req.body , ')(*&^%#%@%');
     try {
         // Checking if the mail id is used
         let doctor = await Doctors.findOne({ email: req.body.email });
